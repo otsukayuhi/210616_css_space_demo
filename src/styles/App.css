@@ -1,0 +1,20 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: auto;
+  padding-top: 24px; /* 子要素との距離は内側の余白（padding） */
+  max-width: 1000px;
+  min-height: 100vh;
+}
+.app_cat-list {
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 16px; /* コンポーネント間の余白は親が決めると良い */
+  padding: 0 24px; /* 子要素との距離は内側の余白（padding） */
+}
+/* UIコンポーネントは外側の余白を持たない */
+.app_footer {
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+}

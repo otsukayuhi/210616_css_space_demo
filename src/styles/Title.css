@@ -1,0 +1,18 @@
+.title {
+  text-align: center;
+}
+.title > div {
+  /*
+    絶対に変わらない余白であれば直接書くのもあり
+    （今回で言えば ::after の装飾があるので margin-bottom は固定でもよさそう）
+  */
+  margin-bottom: 8px;
+}
+.title::after {
+  content: '';
+  display: block;
+  margin: auto;
+  width: 36px;
+  height: 2px;
+  background-color: #000;
+}

@@ -1,0 +1,25 @@
+/* UIコンポーネントは外側の余白を持たない */
+.cat {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* コンポーネント間の余白は親が決めると良い */
+  padding: 16px; /* 子要素との距離は内側の余白（padding） */
+  width: 100%;
+  border-radius: 4px;
+  transition: box-shadow ease-out 0.1s;
+}
+.cat:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.cat__image {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50%);
+}
+.cat__detail {
+  flex: auto;
+  font-size: 14px;
+}
+.cat__detail > dt {
+  font-weight: bold;
+}
