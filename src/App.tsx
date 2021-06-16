@@ -11,6 +11,7 @@ import "./styles/App.css";
 
 const App: React.FC = () => (
   <div className="app">
+    {/* Pears って洋梨やん。。。まあいいか */}
     <Title marginBottom="24px" text="Neko Pears"/>
     <main className="app_cat-list">
       {catList.map((props, index) => (
